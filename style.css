@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0
+}
+.container{
+  background-color:red;
+  height:700px;
+  display: grid;
+  /* grid-template-rows:133px 133px 133px ;
+  grid-template-columns: 133px 133px 133px; */
+  grid-template-rows: 143px 1fr 143px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap:12px;
+  column-gap: 12px;
+   /*can use center as well as add too for it*/
+  /* align-items: center; */
+  /* For vertical alignment of items use align-items or align-self if for an individual item*/
+  place-items:center;
+}
+
+.item{
+  background-color: aqua;
+  height:122px;
+  width:122px;
+} 
+
+.item1{
+  background: black;
+  grid-column:1/span 3;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  width:100vw;
+  
+}
+/* Helps in understanding which row and column starts and ends at which line */
+ /* .item2{
+  justify-self: center;
+}  */
+.footer{
+  background: black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width:100vw;
+}
+
+/* https://www.youtube.com/watch?v=QKJRFSs5oEw */
